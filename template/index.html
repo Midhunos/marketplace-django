@@ -1,0 +1,328 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Best Store </title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script src="https://kit.fontawesome.com/8360c257ca.js" crossorigin="anonymous"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="static/js/jquery.min.js"></script>
+
+<!-- //js -->
+<!-- cart -->
+<script src="static/js/simpleCart.min.js"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+<script type="text/javascript" src="static/js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- timer -->
+<link rel="stylesheet" href="static/css/jquery.countdown.css" />
+<!-- //timer -->
+<!-- animation-effect -->
+<link href="static/css/animate.min.css" rel="stylesheet"> 
+<script src="static/js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+		
+			<div class="logo-nav">
+				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".5s">
+					<h1><a href="{% url 'index' %}">Best Store <span>Shop anywhere</span></a></h1>
+				</div>
+				<div class="logo-nav-left1">
+					<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header nav_2">
+						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div> 
+					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="{% url 'index' %}" class="act"><button type="button" style="border:none ; box-shadow: none;background-color: transparent;"> Home </button></a></li>	
+							<!-- Mega Menu -->
+							<li >
+								<a href="{% url 'products' %}" >
+									<button type="button" style="border:none ; box-shadow: none;background-color: transparent;"> Products </button></a>
+							
+							</li>
+						
+
+							<li class="dropdown">
+								<a href="{% url 'vendor/sell'  %}" ><button type="button"  style="border: none;background-color: transparent;"> Sell </button></b></a>
+							
+							</li>
+						
+							<li><a href="{% url 'userProfiles' %}"><button type="button"  style="border: none;background-color: transparent;"> Profile</button></a></li>
+							<li><a href="{% url 'mail' %}"><button type="button"  style="border: none;background-color: transparent;"> Mail us</button></a></li>
+						</ul>
+					</div>
+					</nav>
+				</div>
+				<div class="logo-nav-left">
+					<div class="search-box">
+						<div id="sb-search" class="sb-search">
+							<form action="{% url 'search' %}" >
+								<input class="sb-search-input" placeholder="search Here..." type="text" id="search" name="q">
+                                 <button type="submit"></button>
+								<span class="sb-icon-search"> </span>
+							</form>
+						</div>
+					</div>
+						<!-- search-scripts -->
+						<script src="static/js/classie.js"></script>
+						<script src="static/js/uisearch.js"></script>
+							<script>
+								new UISearch( document.getElementById( 'sb-search' ) );
+							</script>
+						<!-- //search-scripts -->
+				</div>
+				<div class="header-right">
+					{% if request.user.is_authenticated %}
+					<div class="cart box_1">
+						<a href="{% url 'cart' %}">
+							<h3> 
+								<img src="static/images/bag.png" alt="" />
+							</h3>
+						</a>
+						
+						<div class="clearfix"> </div>
+					</div>
+					{% endif %}	
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-info animated wow zoomIn" data-wow-delay=".5s">
+				<h3> BS Online Shopping</h3>
+				<h4>Up to <span>50% <i>Off/-</i></span></h4>
+				<div class="wmuSlider example1">
+					<div class="wmuSliderWrapper">
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="banner-info1">
+									<p>T-Shirts + Formal Pants + Jewellery + Cosmetics</p>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="banner-info1">
+									<p>Toys + Furniture + Watches</p>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="banner-info1">
+									<p>Tops  + Sportswear + Sneakers</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+					<script src="static/js/jquery.wmuSlider.js"></script> 
+					<script>
+						$('.example1').wmuSlider();         
+					</script> 
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container"> 
+		
+			<div class="banner-bottom-grids">
+				{% if categoriespage %}
+				{% for cat in categoriespage %}
+				<div class="banner-bottom-grid-left animated wow slideInLeft" data-wow-delay=".5s">
+					<div class="grid">
+						<a href="{% url 'pro' cat.slug %}">	<figure class="effect-julia">
+							<img src="{{cat.category_img.url}}" style="height: 350px; width: 450px;" alt=" " class="img-responsive" />
+							<figcaption>
+								<h3>Best <span>Store</span><i> {{cat.title}}</i></h3>
+								<div>
+									<p style="background-color: transparent; color: azure;">{{cat.description}}</p>
+								
+								</div>
+							</figcaption>			
+						</figure></a>
+					</div>
+				</div>
+				{% endfor %}
+				{% endif %}
+				
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- collections -->
+	<div class="new-collections">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".5s">New Collections</h3>
+			<p class="est animated wow zoomIn" data-wow-delay=".5s">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+				deserunt mollit anim id est laborum.</p>
+			<div class="new-collections-grids">
+				{% if products %}
+				{% for prod in products %}
+				<div class="col-md-3 new-collections-grid">
+					<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
+						<div class="new-collections-grid1-image">
+							<a href="{% url 'detailpage' prod.slug %}" class="product-image"><img src="{{prod.product_image.url}}"  style="height: 350px;width: 250px;" alt=" " class="img-responsive" /></a>
+						
+							
+						</div>
+						<h4><a href="{% url 'detailpage' prod.slug %}">{{prod.title}}</a></h4>
+						<p>{{prod.description}}</p>
+						<div class="new-collections-grid1-left simpleCart_shelfItem">
+							<a href="{% url 'detailpage' prod.slug %}">
+							<p></p><span class="item_price">{{prod.price}}</span> &nbsp;<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+						</a>
+						</div>
+					</div>
+					
+						
+						<div class="clearfix"> </div>
+					</div>
+					{% endfor %}
+					{% endif %}
+				
+			
+			</div>
+		</div>
+	</div>
+<!-- //collections -->
+<!-- new-timer -->
+
+<!-- //new-timer -->
+<!-- collections-bottom -->
+	
+<!-- //collections-bottom -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
+					<h3>About Us</h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.<span>Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit.</span></p>
+				</div>
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+					<h3>Contact Info</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
+					<h3>Flickr Posts</h3>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/13.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/14.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/15.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/16.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/13.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/14.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/15.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/16.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/13.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/14.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/15.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="static/images/16.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".8s">
+					<h3>Blog Posts</h3>
+					<div class="footer-grid-sub-grids">
+						<div class="footer-grid-sub-grid-left">
+							<a href="single.html"><img src="static/images/9.jpg" alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="footer-grid-sub-grid-right">
+							<h4><a href="single.html">culpa qui officia deserunt</a></h4>
+							<p>Posted On 25/3/2016</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="footer-grid-sub-grids">
+						<div class="footer-grid-sub-grid-left">
+							<a href="single.html"><img src="static/images/10.jpg" alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="footer-grid-sub-grid-right">
+							<h4><a href="single.html">Quis autem vel eum iure</a></h4>
+							<p>Posted On 25/3/2016</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="footer-logo animated wow slideInUp" data-wow-delay=".5s">
+				<h2><a href="{% url 'index' %}">Best Store <span>shop anywhere</span></a></h2>
+			</div>
+			<div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
+			
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+</body>
+</html>

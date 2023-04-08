@@ -1,0 +1,328 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Best Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Checkout :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- //js -->
+<!-- cart -->
+	<script src="{% static 'js/simpleCart.min.js' %}"> </script>
+<!-- cart -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+<!-- for bootstrap working -->
+	<script type="text/javascript" src="{% static 'js/bootstrap-3.1.1.min.js' %}"></script>
+<!-- //for bootstrap working -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- animation-effect -->
+<link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8360c257ca.js" crossorigin="anonymous"></script> 
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="header-grid">
+				<div class="header-grid-left animated wow slideInLeft" data-wow-delay=".5s">
+				
+				</div>
+				<div class="header-grid-right animated wow slideInRight" data-wow-delay=".5s">
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="logo-nav">
+				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".5s">
+					<h1><a href="{% url 'index' %}">Best Store <span>Shop anywhere</span></a></h1>
+				</div>
+				<div class="logo-nav-left1">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header nav_2">
+							<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div> 
+						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="{% url 'index' %}" class="act"><button type="button" style="border:none ; box-shadow: none;background-color: transparent;"> Home </button></a></li>	
+								<!-- Mega Menu -->
+								<li >
+									<a href="{% url 'products' %}" >
+										<button type="button" style="border:none ; box-shadow: none;background-color: transparent;"> Products </button></a>
+								
+								</li>
+								<li class="dropdown">
+									<a href="{% url 'vendor/sell' %}" ><button type="button"  style="border: none;background-color: transparent;"> Sell</button></b></a>
+								
+								</li>
+								<li><a href="{% url 'userProfiles' %}"><button type="button"  style="border: none;background-color: transparent;"> Profile</button></a></li>
+								<li><a href="{% url 'mail' %}"><button type="button"  style="border: none;background-color: transparent;"> Mail us</button></a></li>
+							</ul>
+						</div>
+						</nav>
+				</div>
+				<div class="logo-nav-right">
+					<div class="search-box">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"> </span>
+							</form>
+						</div>
+					</div>
+						<!-- search-scripts -->
+						<script src="{% static 'js/classie.js' %}"></script>
+						<script src="{% static 'js/uisearch.js' %}"></script>
+							<script>
+								new UISearch( document.getElementById( 'sb-search' ) );
+							</script>
+						<!-- //search-scripts -->
+				</div>
+				<div class="header-right">
+					<div class="cart box_1">
+						<a href="{% url 'cart' %}">
+							<h3> 
+								<img src="{% static 'images/bag.png' %}" alt="" />
+							</h3>
+						</a>
+						
+						<div class="clearfix"> </div>
+					</div>	
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+				<li class="active">Checkout Page</li>
+			</ol>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<!-- checkout -->
+	<div class="checkout">
+		<div class="container">
+			<h3 class="animated wow slideInLeft" data-wow-delay=".5s">Your shopping cart contains: <span>3 Products</span></h3>
+			{% if cart_products %}
+					{% for cart_prod in cart_products %}
+					
+			<div class="checkout-right animated wow slideInUp" data-wow-delay=".5s">
+			
+				<table class="timetable_sub">
+					<thead>
+						<tr>
+								
+							<th>Product</th>
+							<th>Quality</th>
+							<th>Product Name</th>
+							<th>Service Charges</th>
+							<th>Price</th>
+							
+							
+						</tr>
+					</thead>
+					
+					<tr class="rem1">
+						
+						<td class="invert-image"><a href="single.html"><img src="{{cart_prod.product.product_image.url}}" style="height:250px ; width: 220px;" alt=" " class="img-responsive" /></a></td>
+						<td class="invert">
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<!-- <a href="{% url 'minuscart' cart_prod.id %}"><div class="entry value-minus">&nbsp;</div></a>
+									<div class="entry value" ><span>1</span></div>
+									<div class="entry value-plus active">&nbsp;</div> -->
+									<a href="{% url 'minuscart' cart_prod.id %}">  <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity"></a>
+
+
+
+									<input type="text" step="1" max="10" value="{{cart_prod.quantity}}" name="quantity" class="quantity-field border-0 text-center w-25 ">  
+			  
+								  <a  href="{% url 'pluscart' cart_prod.id %}"> <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity"> </a> 
+									  
+								 
+
+
+
+								</div>
+							</div>
+						</td>
+						<td class="invert">{{cart_prod.product.title}}</td>
+						<td class="invert">{{service_amount}}</td>
+						<td class="invert">{{cart_prod.total_price}}</td>
+						
+					
+					</tr>
+				
+								<!--quantity-->
+									<script>
+									$('.value-plus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+										divUpd.text(newVal);
+									});
+
+									$('.value-minus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+										if(newVal>=1) divUpd.text(newVal);
+									});
+									</script>
+								<!--quantity-->
+				</table>
+				<div class="d-flex justify-content-end ">
+                      
+					<a href="{% url 'delete' cart_prod.id %}"><button type="button" class="btn btn-dark btn-block btn-lg"><span><i class="fa-sharp fa-solid fa-trash"></i></span></button></a>
+		   
+				   </div>
+				
+			</div>
+			
+			{% endfor %}
+			{% endif %}
+		
+			<div class="checkout-left">	
+				<div class="checkout-left-basket animated wow slideInLeft" data-wow-delay=".5s">
+					<h4>Continue to basket</h4>
+					<ul>
+						<li>Product <i>-</i> <span>{{amount}} </span></li>
+						
+						<li>Total Service Charges <i>-</i> <span>{{service_amount}}</span></li>
+						<li><b> Total</b> <i>-</i> <span>{{total_amount}}</span></li>
+					</ul>
+				</div>
+				<div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
+					<a href="{% url 'adres' %}"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>PLACE YOUR ORDER</a>
+				</div>
+				
+				<div class="clearfix"> </div>
+				<div class="checkout" ><button type="submit" class="btn btn-dark">
+					<a href="{% url 'logoutpage' %}" class="btn btn-dark">Log Out</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //checkout -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
+					<h3>About Us</h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.<span>Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit.</span></p>
+				</div>
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+					<h3>Contact Info</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
+					<h3>Flickr Posts</h3>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/13.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/14.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/15.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/16.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/13.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/14.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/15.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/16.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/13.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/14.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/15.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="{% static 'images/16.jpg' %}" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".8s">
+					<h3>Blog Posts</h3>
+					<div class="footer-grid-sub-grids">
+						<div class="footer-grid-sub-grid-left">
+							<a href="single.html"><img src="{% static 'images/9.jpg' %}  " alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="footer-grid-sub-grid-right">
+							<h4><a href="single.html">culpa qui officia deserunt</a></h4>
+							<p>Posted On 25/3/2016</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="footer-grid-sub-grids">
+						<div class="footer-grid-sub-grid-left">
+							<a href="single.html"><img src="{% static 'images/10.jpg' %}" alt=" " class="img-responsive" /></a>
+						</div>
+						<div class="footer-grid-sub-grid-right">
+							<h4><a href="single.html">Quis autem vel eum iure</a></h4>
+							<p>Posted On 25/3/2016</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="footer-logo animated wow slideInUp" data-wow-delay=".5s">
+				<h2><a href="{% url 'index' %}">Best Store <span>shop anywhere</span></a></h2>
+			</div>
+			<div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
+				<p>&copy 2016 Best Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+</body>
+</html>
