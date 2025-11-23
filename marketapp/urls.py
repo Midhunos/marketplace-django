@@ -4,10 +4,10 @@ from .import views
 
 urlpatterns=[
 
-    path('',views.log,name='log'),
-    path('registrations',views.registrations,name='registrations'),
+    # path('',views.log,name='log'),
+    # path('registrations',views.registrations,name='registrations'),
     
-    path('index',views.index,name='index'),
+    path('',views.index,name='index'),
     path('products',views.products,name='products'),
     
    
